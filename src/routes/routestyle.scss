@@ -1,0 +1,63 @@
+.listproducts {
+  color: #b4b4b487;
+  overflow-x: hidden;
+
+  .searchedPlaceholder {
+    margin-left: 40px;
+    height: 40px;
+  }
+
+  .select {
+    position: relative;
+    width: 150px;
+    height: 40px;
+
+    background-color: #5004dd;
+    margin: 40px;
+    font-size: 1.1rem;
+
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover .selectMask {
+      display: flex;
+      opacity: 1;
+    }
+
+    .selectMask {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+
+      transition: all ease 0.2s;
+      width: 100%;
+      top: 105%;
+
+      left: 0;
+      background-color: #0f0824;
+      opacity: 0;
+
+      display: none;
+
+      span {
+        display: block;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+
+        height: 35px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: rgba(51, 51, 51, 0.3);
+          transition: all ease 0.2s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
